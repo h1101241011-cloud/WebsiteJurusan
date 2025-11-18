@@ -134,19 +134,23 @@
     </nav>
 
     <!-- Hero Section -->
-<section class="hero position-relative text-white d-flex align-items-center justify-content-center" style="height: 60vh; background-image: url('6e1fea8a085f9966636140cf463e5212.jpeg'); background-size: cover; background-position: center;">
+<section class="hero position-relative text-white d-flex align-items-center" style="height: 60vh; background-image: url('6e1fea8a085f9966636140cf463e5212.jpeg'); background-size: cover; background-position: center;">
   <!-- Overlay gelap agar teks terlihat -->
-  <div style="position: absolute; top:0; left:0; right:0; bottom:0; background-color: rgba(0,0,0,0.4);"></div>
+  <div style="position: absolute; top:0; left:0; right:0; bottom:0; background-color: rgba(0,0,0,0.4); z-index:1;"></div>
 
-  <div class="container position-relative d-flex align-items-center justify-content-center" style="gap: 30px;">
-    <!-- Logo di kiri -->
-    <div class="d-none d-md-block" style="max-width:150px;">
-      <img src="cropped-logo-UNTAN-removebg-preview-2.png" alt="Logo Sistem Informasi Untan" class="img-fluid" style="filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.7));" />
+  <div class="container position-relative d-flex align-items-center" style="gap: 40px; z-index: 2; padding: 20px;">
+    <!-- Logo kiri dengan lebar tetap -->
+    <div style="flex: 0 0 180px;">
+      <img src="cropped-logo-UNTAN-removebg-preview-2.png" alt="Logo Sistem Informasi Untan" class="img-fluid" style="filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.7)); border-radius: 10px;" />
     </div>
-    <!-- Teks utama di tengah -->
-    <div class="text-center">
-      <h1 style="font-size: 3.2rem; font-weight: 600; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Selamat Datang di Sistem Informasi</h1>
-      <p class="lead" style="font-size: 1.3rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">Universitas Tanjungpura - Mengembangkan Teknologi Informasi untuk Masa Depan</p>
+    <!-- Teks utama di kanan, fleksibel -->
+    <div style="flex: 1;">
+      <h1 style="font-size: 3.2rem; font-weight: 600; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); margin-bottom: 0.3em;">
+        Selamat Datang di Sistem Informasi
+      </h1>
+      <p class="lead" style="font-size: 1.3rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); margin: 0;">
+        Universitas Tanjungpura - Mengembangkan Teknologi Informasi untuk Masa Depan
+      </p>
     </div>
   </div>
 </section>
