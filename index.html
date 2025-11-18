@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Website Jurusan Teknik Sipil - Universitas Gadjah Mada</title>
+    <title>Website Sistem Informasi - Universitas Tanjungpura</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
@@ -14,13 +14,26 @@
             overflow-x: hidden;
         }
         .hero {
-            background: url('https://via.placeholder.com/1920x600/093B6B/ffffff?text=Jurusan+Teknik+Sipil+UGM') no-repeat center center/cover;
+            background: url('6e1fea8a085f9966636140cf463e5212.jpeg') no-repeat center center/cover;
             height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #e3e6e8;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+        .hero .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .hero img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .hero h1 {
             font-size: 3rem;
@@ -40,6 +53,11 @@
             transform: scale(1.05);
             transition: transform 0.3s ease;
             box-shadow: 0 10px 20px rgba(9, 59, 107, 0.4);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
         }
         .fade-in {
             opacity: 0;
@@ -70,13 +88,35 @@
             height: 400px;
             object-fit: cover;
         }
+        /* Smooth scroll untuk anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Responsiveness untuk galeri dan hero */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero img {
+                max-width: 150px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            .hero .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .carousel-item img {
+                height: 250px;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Teknik Sipil UGM</a>
+            <a class="navbar-brand" href="#">Sistem Informasi Untan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -95,9 +135,12 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="text-center">
-            <h1>Selamat Datang di Jurusan Teknik Sipil</h1>
-            <p class="lead">Universitas Gadjah Mada - Membangun Masa Depan Infrastruktur</p>
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/200x200/ffffff/000000?text=Logo+SI+Untan" alt="Logo Sistem Informasi Untan" />
+            <div class="text-center">
+                <h1>Selamat Datang di Sistem Informasi</h1>
+                <p class="lead">Universitas Tanjungpura - Mengembangkan Teknologi Informasi untuk Masa Depan</p>
+            </div>
         </div>
     </section>
 
@@ -107,10 +150,10 @@
             <h2 class="text-center mb-4">Tentang Jurusan</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Jurusan Teknik Sipil Universitas Gadjah Mada (UGM) fokus pada pendidikan dan penelitian di bidang konstruksi, struktur, geoteknik, transportasi, dan manajemen konstruksi. Kami berkomitmen untuk menghasilkan lulusan yang inovatif dan berkontribusi pada pembangunan nasional.</p>
+                    <p>Jurusan Sistem Informasi Universitas Tanjungpura (Untan) fokus pada pendidikan dan penelitian di bidang pengembangan sistem informasi, analisis data, keamanan siber, dan teknologi digital. Kami berkomitmen untuk menghasilkan lulusan yang inovatif dan siap berkontribusi dalam era digital.</p>
                 </div>
                 <div class="col-md-6">
-                    <p>Fakultas: Fakultas Teknik. Bergabunglah dengan komunitas insinyur sipil yang siap menghadapi tantangan infrastruktur modern!</p>
+                    <p>Fakultas: Fakultas Teknik. Bergabunglah dengan komunitas ahli sistem informasi yang siap menghadapi tantangan teknologi modern!</p>
                 </div>
             </div>
         </section>
@@ -122,24 +165,24 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Mekanika Struktur</h5>
-                            <p class="card-text">Pelajari analisis dan desain struktur bangunan.</p>
+                            <h5 class="card-title">Algoritma dan Pemrograman</h5>
+                            <p class="card-text">Pelajari dasar-dasar algoritma dan pengembangan perangkat lunak.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Geoteknik</h5>
-                            <p class="card-text">Eksplorasi sifat tanah dan fondasi bangunan.</p>
+                            <h5 class="card-title">Basis Data</h5>
+                            <p class="card-text">Eksplorasi desain dan manajemen database untuk aplikasi informasi.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Transportasi</h5>
-                            <p class="card-text">Pelajari perencanaan jalan, jembatan, dan sistem transportasi.</p>
+                            <h5 class="card-title">Sistem Informasi Manajemen</h5>
+                            <p class="card-text">Pelajari perancangan sistem informasi untuk organisasi dan bisnis.</p>
                         </div>
                     </div>
                 </div>
@@ -149,58 +192,64 @@
         <!-- Dosen dan Tenaga Pendidik -->
         <section id="dosen" class="fade-in mt-5">
             <h2 class="text-center mb-4">Dosen dan Tenaga Pendidik</h2>
-            <p class="text-center mb-4">Tim pengajar kami terdiri dari para ahli di bidang Teknik Sipil yang berkomitmen untuk memberikan pendidikan berkualitas tinggi.</p>
+            <p class="text-center mb-4">Tim pengajar kami terdiri dari para ahli di bidang Sistem Informasi yang berkomitmen untuk memberikan pendidikan berkualitas tinggi.</p>
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <div class="card">
+                        <img src="bu-renny-1-1023x1536-removebg-preview-e1698993265598.png" class="card-img-top" alt="Foto Dr. Ahmad Santoso" />
                         <div class="card-body">
-                            <h5 class="card-title">Dr. Ahmad Santoso, S.T., M.T.</h5>
-                            <p class="card-text">Kepala Jurusan. Ahli di bidang Mekanika Struktur dan Desain Bangunan.</p>
-                            <small class="text-muted">Email: ahmad.santoso@ugm.ac.id</small>
+                            <h5 class="card-title">Renny Puspita Sari, S.T., M.T</h5>
+                            <p class="card-text">Ketua Jurusan Sistem Informasi</p>
+                            <small class="text-muted">Email: rennypuspitasari@untan.ac.id</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
+                        <img src="1699579752930-removebg-preview-e1699602059606.png" class="card-img-top" alt="Foto Prof. Siti Nurhaliza" />
                         <div class="card-body">
-                            <h5 class="card-title">Prof. Siti Nurhaliza, S.T., Ph.D.</h5>
-                            <p class="card-text">Ahli Geoteknik dan Fondasi. Peneliti utama dalam proyek infrastruktur berkelanjutan.</p>
-                            <small class="text-muted">Email: siti.nurhaliza@ugm.ac.id</small>
+                            <h5 class="card-title">Ibnur Rusi, S.Kom, M.M</h5>
+                            <p class="card-text">Sekretaris Jurusan Sistem Informasi</p>
+                            <small class="text-muted">Email: sibnurrusi@untan.ac.id</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
+                        <img src="foto-pak-ferdy-100x100-1.jpg" class="card-img-top" alt="Foto Ir. Budi Prasetyo" />
                         <div class="card-body">
-                            <h5 class="card-title">Ir. Budi Prasetyo, M.Sc.</h5>
-                            <p class="card-text">Spesialis Transportasi dan Perencanaan Jalan. Pengalaman di proyek nasional.</p>
-                            <small class="text-muted">Email: budi.prasetyo@ugm.ac.id</small>
+                            <h5 class="card-title">Ferdy Febriyanto, S.Kom., M.Kom</h5>
+                            <p class="card-text">Kepala Laboraturium Komputer Jurusan Sistem Informasi</p>
+                            <small class="text-muted">Email: ferdyfebriyanto@untan.ac.id</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
+                        <img src="fotopakilham.jpg" class="card-img-top" alt="Foto Dr. Maya Sari" />
                         <div class="card-body">
-                            <h5 class="card-title">Dr. Maya Sari, S.T., M.Eng.</h5>
-                            <p class="card-text">Ahli Manajemen Konstruksi dan Pengendalian Proyek.</p>
-                            <small class="text-muted">Email: maya.sari@ugm.ac.id</small>
+                            <h5 class="card-title">Ilhamsyah, S.Si.,M.Cs</h5>
+                            <p class="card-text">Ketua Kelompok Keahlian Intelijensi Bisinis</p>
+                            <small class="text-muted">Email: ilhamsyah@untan.ac.id</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
+                        <img src="citations-2.jpeg" class="card-img-top" alt="Foto Ir. Rudi Hartono" />
                         <div class="card-body">
-                            <h5 class="card-title">Ir. Rudi Hartono, Ph.D.</h5>
-                            <p class="card-text">Spesialis Hidrologi dan Pengelolaan Sumber Daya Air.</p>
-                            <small class="text-muted">Email: rudi.hartono@ugm.ac.id</small>
+                            <h5 class="card-title">Nurul Mutiah, S.T., M.T</h5>
+                            <p class="card-text">Ketua Kelompok Keahlian Manajeman Sistem Informasi</p>
+                            <small class="text-muted">Email: nurulmutiah@untan.ac.id</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
+                        <img src="Jbr__2366rf-removebg-preview-e1698992723807.png" class="card-img-top" alt="Foto Tim Lab" />
                         <div class="card-body">
                             <h5 class="card-title">Tenaga Pendidik: Tim Lab dan Asisten</h5>
-                            <p class="card-text">Mendukung praktikum dan penelitian di laboratorium struktur, geoteknik, dan transportasi.</p>
+                            <p class="card-text">Admin Jurusan Sistem Informasi</p>
                             <small class="text-muted">Hubungi jurusan untuk detail lebih lanjut.</small>
                         </div>
                     </div>
@@ -214,13 +263,13 @@
             <div id="galeriCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="1-upj-.jpg" class="d-block w-100" alt="Konstruksi Jembatan" />
+                        <img src="WhatsApp-Image-2023-12-05-at-22.58.00_8cd625a4-scaled-qgddvipz7hu5zn7durkngyouilc35wpbw03qy85zfw.jpg" class="d-block w-100" alt="Lab Pemrograman" />
                     </div>
                     <div class="carousel-item">
-                        <img src="IMG_1944.jpg" class="d-block w-100" alt="Lab Geoteknik" />
+                        <img src="WhatsApp-Image-2023-03-13-at-2033.11.jpg" class="d-block w-100" alt="Workshop Data Science" />
                     </div>
                     <div class="carousel-item">
-                        <img src="trips12023_1-762x1024.jpg" class="d-block w-100" alt="Proyek Mahasiswa" />
+                        <img src="2023_07_13_09_52_IMG_0963-scaled.jpg" class="d-block w-100" alt="Proyek Mahasiswa SI" />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#galeriCarousel" data-bs-slide="prev">
@@ -239,8 +288,8 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Workshop Infrastruktur Berkelanjutan</h5>
-                            <p class="card-text">Bergabunglah dalam workshop pembangunan hijau bulan ini!</p>
+                            <h5 class="card-title">Seminar Teknologi Digital</h5>
+                            <p class="card-text">Bergabunglah dalam seminar tentang inovasi teknologi bulan ini!</p>
                             <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -248,8 +297,8 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Prestasi Mahasiswa Teknik Sipil</h5>
-                            <p class="card-text">Tim kami menang kompetisi desain jembatan nasional.</p>
+                            <h5 class="card-title">Prestasi Mahasiswa Sistem Informasi</h5>
+                            <p class="card-text">Tim kami menang kompetisi pengembangan aplikasi nasional.</p>
                             <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
                         </div>
                     </div>
@@ -260,23 +309,23 @@
         <!-- Kontak -->
         <section id="kontak" class="fade-in mt-5">
             <h2 class="text-center mb-4">Kontak Kami</h2>
-            <form>
+            <form action="mailto:info@sisfo.untan.ac.id" method="post" enctype="text/plain">
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" />
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" />
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email Anda" required />
                 </div>
                 <div class="mb-3">
                     <label for="pesan" class="form-label">Pesan</label>
-                    <textarea class="form-control" id="pesan" rows="3" placeholder="Tulis pesan Anda"></textarea>
+                    <textarea class="form-control" id="pesan" name="pesan" rows="3" placeholder="Tulis pesan Anda" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Kirim</button>
             </form>
             <p class="mt-3">
-                Email: info@tekniksipil.ugm.ac.id | Telepon: (0274) 123-4567 | Alamat: Bulaksumur, Yogyakarta 55281
+                Email: info@sisfo.untan.ac.id | Telepon: (0561) 123-4567 | Alamat: Jl. Prof. Dr. H. Hadari Nawawi, Pontianak 78124
             </p>
         </section>
     </div>
@@ -284,7 +333,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>&copy; 2023 Jurusan Teknik Sipil Universitas Gadjah Mada. Semua hak dilindungi.</p>
+            <p>&copy; 2023 Jurusan Sistem Informasi Universitas Tanjungpura. Semua hak dilindungi.</p>
         </div>
     </footer>
 
@@ -300,6 +349,17 @@
             });
         });
         document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+
+        // Validasi form sederhana
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const nama = document.getElementById('nama').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const pesan = document.getElementById('pesan').value.trim();
+            if (!nama || !email || !pesan) {
+                alert('Harap isi semua field.');
+                e.preventDefault();
+            }
+        });
     </script>
 </body>
 </html>
